@@ -1,17 +1,4 @@
-import { ApiProperty } from "@nestjs/swagger";
-
-export class CreateDto {
-    @ApiProperty()
+export class CreateTaskDto {
     title: string;
-
-    @ApiProperty()
-    description?: string;
-}
-
-export class UpdateDto {
-    @ApiProperty()
-    title: string;
-
-    @ApiProperty()
-    description?: string;
+    description: string;
 }
